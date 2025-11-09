@@ -1,0 +1,255 @@
+Contents:
+
+1. What is Kingfisher?
+2. Who can use Kingfisher?
+3. How to install Kingfisher?
+4. How to use Kingfisher?
+5. How to make your own modifications?
+6. Where to report bugs?
+7. Updates in version 1.2 (2013, b 2016)
+8. Hints
+
+1. What is Kingfisher?
+
+Kingfisher is a data mining tool, which searches for the best
+non-redundant dependency rules, which express statistically
+significant dependencies in data. The special feature of Kingfisher is
+that it scales up well without any minimum frequency thresholds or
+other suboptimal heuristics. This means that one can find globally
+optimal dependencies from data. Another unique feature is that it
+supports Fisher's p-value as a goodness measure, which produces very
+reliable results (the discovered dependencies hold well in future data
+which is not always true with other measures).
+
+The discovered rules are of form X->A or X->~A, where X is a set of
+binary attributes and consequence is any single attribute or its
+negation.  No negations can occur in the antecedent of rules (you can
+circumvent this restriction with suitable preprocessing). Notice that
+with many measures (like Fisher's p and chi2), the positive dependence
+between X and A is the same as positive dependence between ~X and ~A
+or negative dependence between X and ~A or ~X and A. This means that
+you can find both positive and negative dependencies with these
+measures.
+
+The current version evaluates the statistical significance by three
+measures: Fisher's pF (Fisher's exact test), the chi^2-measure and
+mutual information (MI). It is also possible to add your own measure
+functions (see 5).
+
+All discovered rules are required to be non-redundant, which means
+that they do not contain any redundant attributes, which do not
+improve the rule.  Rule X->A is considered non-redundant, if it is
+more significant than more general rules with the same
+consequence. For example, if measure M is increasing by goodness (a
+high value indicates a good rule) and M(A1 A2 A3 -> A5)<=M(A1 -> A5),
+then A1 A2 A3 -> A5 is considered redundant in respect of A1 -> A5.
+
+
+The details are described in 
+
+Hämäläinen, W.: Efficient discovery of the top-K optimal dependency
+rules with Fisher's exact test of significance. Proceedings of the 
+10th IEEE International Conference on Data Mining
+(ICDM 2010), pp. 196-205 IEEE Computer Society 2010.
+
+and (more detailed)
+
+Hämäläinen, W.: Kingfisher: an efficient algorithm for searching for
+both positive and negative dependency rules with statistical
+significance measures. Knowledge and Information Systems: An
+International Journal (KAIS) 32(2):383-414, 2012.
+
+2. Who can use Kingfisher?
+
+Kingfisher has the following copyright, which is also included in the
+source file:
+
+------------------------------------------------------------------------
+ (C) Copyright 2010 Wilhelmiina Hämäläinen.
+
+
+      The code can be freely used for academic/research purposes. Direct
+      or indirect use for commercial advantage is not allowed without
+      written permission from the author.
+
+      The code can be modified and redistributed if this note is left
+      intact.
+-------------------------------------------------------------------------
+
+If you use it for your own publications, use one of the references above.
+
+
+
+3. How to install Kingfisher?
+
+Kingfisher is written for Linux/Unix with gcc compiler. Simply run
+command "make". It may work well in other environments and/or with
+other compilers, but you have to find it out yourself.
+
+Notice that handling really high-dimensional data sets requires
+relatively much memory. For the classical benchmark data sets
+(Mushroom, Chess, T10I4D100K, T40I10D100K, Accidents, Pumsb, and
+Retail) 1 GB memory is sufficient with measure pF, but the
+chi2-measure may already require more.
+
+Notice also that the default makefile compiles the program by default
+into 64-bit code. If you want to save memory (which can also speed up
+the search), you can use the 32-bit mode. Just modify the makefile
+(add and remove corresponding comment marks). Still, note that some
+really difficult data sets (especially with the chi2-measure) may
+require so large address space that 32 bits isn't sufficient. In this
+case the program may just halt without warning (a well-known malloc
+bug).
+
+
+
+4. How to use Kingfisher?
+
+The basic syntax is 
+
+kingfisher -i<inputfile> -k<maximum attribute number> [-w<measure>]
+-M<threshold for the measure> [-q<number of best rules to search for>
+-t<type of the rule>] [extra options]
+
+where
+
+* input file should be in the transaction form: All binary attributes 
+are represented by non-negative integers, and each row lists attributes 
+which are true on the row. Separator is space. E.g. row "1 2 4 7 9" 
+corresponds attribute combination A1 A2 ~A3 A4 ~A5 ~A6 A7 ~A8 A9 ~A10
+(where ~is negation, 10 is the number of attributes). 
+
+* maximum attribute number means the largest integer which can occur
+in the input data. For example, in the previous example it was
+10. Attribute numbers can begin from either 0 or 1.
+
+* measure M can be either pF (Fisher's exact test, option -w1), ln(pF)
+(Fisher's exact test, option -w2; recommended, when the maximum
+p-value is very small), chi2 (option -w3) or MI (option -w4). If no
+measure is selected, the default is w2. Notice that with the
+chi2-measure (option -w3), continuity correction is used by
+default. If you want to disable the continuity correction (not
+recommended for the sake of accuracy), give option -d.
+
+* threshold for the M-value depends on the measure. For Fisher's pF,
+it should be in range ]0,1[; for ln(pF), it should be <0, for chi2, in
+range ]0,n] (where n is the number of data rows), and for MI, >0.
+
+Since Kingfisher searches for the Q best rules, it updates the
+threshold automatically, when new good rules are found.  However, the
+first levels are proceeded faster, if you give a sufficiently
+demanding threshold in the beginning.  At each level, the program
+outputs the currently used threshold value. So, for example, if the
+program gets stuck at a level, where the updated threshold is x, you
+can stop the search (ctrl-c) and use x (or a more demanding) value as
+a threshold. Alternatively, you can search a smaller number of best
+rules (option -q).
+
+* the number of best rules to search for is optional. By default, the
+program searches for the 100 best rules. If the program gets stuck
+(with very dense data sets), try a smaller number. With easier data
+sets you can also search efficiently for much more rules, e.g. 1000 or
+10 000.
+
+* type of the rule is optional. By default, Kingfisher searches for
+only positive dependency rules. If you want to search for only
+negative dependencies, use option -t2, and for both positive and
+negative dependencies, option -t3. Notice that typically negative
+dependency rules are more demanding to search for (the search
+continues further). So, if the programs gets stuck, you can try to
+search for only positive dependency rules.
+
+Notice also that if you have created new negation (complement)
+attributes for all attributes in the preprocessing phase, then you
+should not search for negative dependency rules - otherwise you would
+get a lot of trivial rules of the form A->~negA, where neg A is a new
+attribute for ~A. Note that in this case there is no need for negative
+dependency rules, because you will get them anyway (positive rule
+X->negA is the same as X->~A).
+
+* all other options are optional. You get a full list of options when
+you give command "kingfisher", without any options. The same help is
+output, if you give a wrong number of options or obligatory options
+are missing.
+
+
+For example: 
+
+kingfisher -i mushroom.dat -k124 -M-1000  
+
+searches for the 100 best positive dependency rules from
+mushroom.dat. The measure is by default ln(pF) and the initial
+threshold is -1000.
+
+kingfisher -imushroom.dat -k124 -M-1000 -t3 -q50                       
+
+searches for the 50 best positive and negative dependency rules from
+mushroom.dat. Otherwise like the previous one.
+
+kingfisher -i mushroom.dat -k124 -w3 -M8000
+
+searches for the 100 best positive rules using chi2-measure (-w3)
+whose initial threshold is 8000.
+
+
+5. How to make your own modifications?
+
+Adding your own measure functions is easy. The only places where you
+have to make changes are measures.h and measures.c. Short instructions
+are given there.
+
+For any goodness measure M it is required that
+* you can define bounds (an upper bound for an increasing measure and 
+a lower bound for a decreasing measure) for any rule XQ->A=a, a={0,1}, in 
+two cases: 
+1) when only m(X) and m(A=a) are known, and 
+2) when m(XA=a), m(X) and m(A=a) are known.
+* M(A->B=b)=M(B->A=a) (a=0,1 and b=0,1) e.g. M(A->~B)=M(B->~A). 
+(This condition is not crucial to the search, but you should modify
+kingfisher.c to remove it. If your search for only positive rules,
+then it suffices that M(A->B)=M(B->A).)
+
+If measure M is well-behaving, you can easily define the required
+upper or lower bounds.
+
+
+6. Where to report bugs?
+
+If you find any bugs, please report to Wilhelmiina Hämäläinen,
+wilhelmiina.hamalainen@gmail.com
+
+
+7. Updates in version v1.2 (2013, 2016)
+
+Version v1.2 has a new goodness measure, Mutual information (MI). In
+addition, it supports new kinds of constraints, which are given by the
+following options. In version v1.2b added extra statistics to output and
+a bug related to chi^2 corrected.
+
+-e<compatibility constraints> 
+
+The file for compatibility constraints lists on each row attributes,
+any two of which cannot occur together. This is useful, when you have
+binarized multivalued or numerical data and want to forbid trivial
+rules, which could result from your binarization. For example, if the
+original variable A had three values {a, b, c} and you have created
+new binary attributes B1,...,B6 for A=a, A=b, A=c, A!=a, A!=b and
+A!=c, you want to prevent B1,...,B6 from occurring 
+together. Otherwise, you could easily get rules like B1->~B4 (A=a ->
+~(A!=a)) or B4 B5 -> B6 (A!=a, A!=b -> A=c). (In this case, you might
+also want to use option -t1 - see above.)
+
+-b<extra constraints>
+The file for extra constraints lists on each row first a consequence
+attribute and then its forbidden condition attributes. This kind of
+constraints can be useful with some binarization techniques or search
+problems.
+
+
+8. Hints
+
+Hints how to transform heterogenous data into the required binary format
+can be found on the Kingfisher homepage
+http://www.cs.uef.fi/~whamalai/kingfisher.html. Useful transformation
+and preprocessing scripts and progams will also be collected there.
+

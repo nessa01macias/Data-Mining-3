@@ -1,0 +1,198 @@
+webbed_feet belly_white -> AR_high fr=10 (0.2000), cf=1.000, gamma=5.000, delta=0.160, M=-2.305e+01 
+sim ccare_M -> incub_M fr=32 (0.6400), cf=0.889, gamma=1.389, delta=0.179, M=-1.954e+01 
+ccare_F ccare_M legcol_yellow -> ftype_A fr=8 (0.1600), cf=1.000, gamma=5.556, delta=0.131, M=-1.790e+01 
+sim wload_low ftype_C -> wading_bird fr=15 (0.3000), cf=1.000, gamma=2.381, delta=0.174, M=-1.754e+01 
+biotope_lakes belly_white -> AR_high fr=8 (0.1600), cf=1.000, gamma=5.000, delta=0.128, M=-1.629e+01 
+ccare_F legcol_yellow -> ftype_A fr=8 (0.1600), cf=0.889, gamma=4.938, delta=0.128, M=-1.573e+01 
+ccare_M incub_F legcol_yellow -> ftype_A fr=8 (0.1600), cf=0.889, gamma=4.938, delta=0.128, M=-1.573e+01 
+incub_M -> ccare_M fr=32 (0.6400), cf=1.000, gamma=1.316, delta=0.154, M=-1.569e+01 
+wsi_short eggs_many -> diet_plants fr=9 (0.1800), cf=1.000, gamma=3.846, delta=0.133, M=-1.507e+01 
+back_brown wsi_short diet_plants -> eggs_many fr=8 (0.1600), cf=1.000, gamma=4.545, delta=0.125, M=-1.500e+01 
+ccare_F back_brown diet_plants -> eggs_many fr=8 (0.1600), cf=1.000, gamma=4.545, delta=0.125, M=-1.500e+01 
+incub_F bmi_low back_brown ftype_C -> diet_invertebrates fr=14 (0.2800), cf=0.875, gamma=2.431, delta=0.165, M=-1.498e+01 
+diet_fish wload_low -> ftype_B fr=7 (0.1400), cf=0.778, gamma=5.556, delta=0.115, M=-1.484e+01 
+diet_fish ftype_C -> diver fr=7 (0.1400), cf=1.000, gamma=5.556, delta=0.115, M=-1.484e+01 
+diet_fish eggs_few wload_low -> plunge_dives fr=6 (0.1200), cf=0.857, gamma=7.143, delta=0.103, M=-1.464e+01 
+incub_M back_grey wload_low -> ftype_B fr=6 (0.1200), cf=1.000, gamma=7.143, delta=0.103, M=-1.464e+01 
+wload_low ftype_C -> wading_bird fr=16 (0.3200), cf=0.889, gamma=2.116, delta=0.169, M=-1.458e+01 
+sim bmi_low back_brown ftype_C -> wading_bird fr=13 (0.2600), cf=1.000, gamma=2.381, delta=0.151, M=-1.437e+01 
+diet_frogs -> diet_small_rodents fr=8 (0.1600), cf=0.889, gamma=4.444, delta=0.124, M=-1.414e+01 
+diet_fish belly_white -> AR_high fr=8 (0.1600), cf=0.889, gamma=4.444, delta=0.124, M=-1.414e+01 
+ccare_M legcol_yellow -> ftype_A fr=8 (0.1600), cf=0.800, gamma=4.444, delta=0.124, M=-1.414e+01 
+incub_F legcol_yellow -> ftype_A fr=8 (0.1600), cf=0.800, gamma=4.444, delta=0.124, M=-1.414e+01 
+wsi_short diet_plants -> eggs_many fr=9 (0.1800), cf=0.818, gamma=3.719, delta=0.132, M=-1.372e+01 
+sim bmi_low ftype_C -> wading_bird fr=14 (0.2800), cf=0.933, gamma=2.222, delta=0.154, M=-1.340e+01 
+bmi_low back_brown ftype_C -> diet_invertebrates fr=14 (0.2800), cf=0.824, gamma=2.288, delta=0.158, M=-1.336e+01 
+incub_F wload_low ftype_C -> diet_invertebrates fr=14 (0.2800), cf=0.824, gamma=2.288, delta=0.158, M=-1.336e+01 
+incub_M diet_fish wload_low -> plunge_dives fr=6 (0.1200), cf=0.750, gamma=6.250, delta=0.101, M=-1.325e+01 
+ccare_M diet_fish wload_low -> plunge_dives fr=6 (0.1200), cf=0.750, gamma=6.250, delta=0.101, M=-1.325e+01 
+webbed_feet arrives_Spring -> biotope_lakes fr=15 (0.3000), cf=0.714, gamma=2.101, delta=0.157, M=-1.298e+01 
+bmi_low eggs_few ftype_C -> wading_bird fr=12 (0.2400), cf=1.000, gamma=2.381, delta=0.139, M=-1.293e+01 
+ftype_A -> legcol_yellow fr=8 (0.1600), cf=0.889, gamma=4.040, delta=0.120, M=-1.286e+01 
+back_brown diet_plants -> eggs_many fr=8 (0.1600), cf=0.889, gamma=4.040, delta=0.120, M=-1.286e+01 
+ccare_M wload_low diet_small_rodents -> ftype_A fr=7 (0.1400), cf=0.875, gamma=4.861, delta=0.111, M=-1.280e+01 
+webbed_feet diet_fish leaves_Autumn -> diver fr=7 (0.1400), cf=0.875, gamma=4.861, delta=0.111, M=-1.280e+01 
+webbed_feet incub_M ftype_C -> diver fr=7 (0.1400), cf=0.875, gamma=4.861, delta=0.111, M=-1.280e+01 
+legcol_red ftype_B -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+ftype_B AR_high -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+webbed_feet ftype_B -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+eggs_few ftype_B -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+legcol_red AR_high -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+legcol_red back_grey -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+diet_fish legcol_red -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+wload_low AR_high -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+webbed_feet legcol_red belly_white -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+webbed_feet eggs_few legcol_red -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+webbed_feet incub_M legcol_red -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+webbed_feet legcol_red wload_low -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+webbed_feet ccare_M legcol_red -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+sim webbed_feet legcol_red -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+eggs_few back_grey AR_high -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+diet_fish eggs_few back_grey -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+webbed_feet eggs_few back_grey -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+webbed_feet back_grey wload_low -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+biotope_lakes diet_fish wload_low -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+webbed_feet diet_fish wload_low -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+biotope_lakes eggs_few wload_low -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+webbed_feet belly_white wload_low -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+webbed_feet eggs_few wload_low -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+webbed_feet incub_M wload_low -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+webbed_feet ccare_M wload_low -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+sim webbed_feet wload_low -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+incub_M eggs_few back_grey belly_white -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+incub_M eggs_few back_grey wload_low -> plunge_dives fr=5 (0.1000), cf=1.000, gamma=8.333, delta=0.088, M=-1.277e+01 
+back_grey wload_low -> ftype_B fr=6 (0.1200), cf=0.857, gamma=6.122, delta=0.100, M=-1.271e+01 
+diet_fish back_grey belly_white -> ftype_B fr=6 (0.1200), cf=0.857, gamma=6.122, delta=0.100, M=-1.271e+01 
+incub_M back_grey belly_white -> ftype_B fr=6 (0.1200), cf=0.857, gamma=6.122, delta=0.100, M=-1.271e+01 
+webbed_feet ftype_C -> wload_medium fr=11 (0.2200), cf=0.647, gamma=2.696, delta=0.138, M=-1.259e+01 
+bmi_low -> wload_low fr=28 (0.5600), cf=0.933, gamma=1.373, delta=0.152, M=-1.256e+01 
+ccare_F diet_plants -> eggs_many fr=9 (0.1800), cf=0.750, gamma=3.409, delta=0.127, M=-1.238e+01 
+incub_M -> sim fr=32 (0.6400), cf=1.000, gamma=1.250, delta=0.128, M=-1.237e+01 
+diet_fish wload_low -> plunge_dives fr=6 (0.1200), cf=0.667, gamma=5.556, delta=0.098, M=-1.215e+01 
+webbed_feet diet_fish wsi_short -> diver fr=6 (0.1200), cf=1.000, gamma=5.556, delta=0.098, M=-1.215e+01 
+webbed_feet incub_M wsi_short -> diver fr=6 (0.1200), cf=1.000, gamma=5.556, delta=0.098, M=-1.215e+01 
+webbed_feet ccare_M biotope_lakes ftype_C -> diver fr=6 (0.1200), cf=1.000, gamma=5.556, delta=0.098, M=-1.215e+01 
+sim webbed_feet biotope_lakes ftype_C -> diver fr=6 (0.1200), cf=1.000, gamma=5.556, delta=0.098, M=-1.215e+01 
+wload_low ftype_C -> diet_invertebrates fr=14 (0.2800), cf=0.778, gamma=2.160, delta=0.150, M=-1.197e+01 
+incub_F bmi_low ftype_C -> diet_invertebrates fr=14 (0.2800), cf=0.778, gamma=2.160, delta=0.150, M=-1.197e+01 
+biotope_lakes -> webbed_feet fr=15 (0.3000), cf=0.882, gamma=2.005, delta=0.150, M=-1.190e+01 
+webbed_feet incub_M -> diet_fish fr=11 (0.2200), cf=0.846, gamma=2.644, delta=0.137, M=-1.186e+01 
+webbed_feet eggs_few -> AR_high fr=7 (0.1400), cf=0.875, gamma=4.375, delta=0.108, M=-1.162e+01 
+webbed_feet ftype_C -> diver fr=9 (0.1800), cf=0.529, gamma=2.941, delta=0.119, M=-1.154e+01 
+plunge_dives legcol_red -> ftype_B fr=5 (0.1000), cf=1.000, gamma=7.143, delta=0.086, M=-1.152e+01 
+plunge_dives AR_high -> ftype_B fr=5 (0.1000), cf=1.000, gamma=7.143, delta=0.086, M=-1.152e+01 
+plunge_dives back_grey -> ftype_B fr=5 (0.1000), cf=1.000, gamma=7.143, delta=0.086, M=-1.152e+01 
+webbed_feet plunge_dives -> ftype_B fr=5 (0.1000), cf=1.000, gamma=7.143, delta=0.086, M=-1.152e+01 
+plunge_dives belly_white -> ftype_B fr=5 (0.1000), cf=1.000, gamma=7.143, delta=0.086, M=-1.152e+01 
+legcol_grey eggs_many -> billcol_grey fr=5 (0.1000), cf=1.000, gamma=7.143, delta=0.086, M=-1.152e+01 
+legcol_red AR_high -> ftype_B fr=5 (0.1000), cf=1.000, gamma=7.143, delta=0.086, M=-1.152e+01 
+legcol_red back_grey -> ftype_B fr=5 (0.1000), cf=1.000, gamma=7.143, delta=0.086, M=-1.152e+01 
+diet_fish legcol_red -> ftype_B fr=5 (0.1000), cf=1.000, gamma=7.143, delta=0.086, M=-1.152e+01 
+wload_low AR_high -> ftype_B fr=5 (0.1000), cf=1.000, gamma=7.143, delta=0.086, M=-1.152e+01 
+webbed_feet legcol_red belly_white -> ftype_B fr=5 (0.1000), cf=1.000, gamma=7.143, delta=0.086, M=-1.152e+01 
+webbed_feet eggs_few legcol_red -> ftype_B fr=5 (0.1000), cf=1.000, gamma=7.143, delta=0.086, M=-1.152e+01 
+webbed_feet incub_M legcol_red -> ftype_B fr=5 (0.1000), cf=1.000, gamma=7.143, delta=0.086, M=-1.152e+01 
+webbed_feet legcol_red wload_low -> ftype_B fr=5 (0.1000), cf=1.000, gamma=7.143, delta=0.086, M=-1.152e+01 
+webbed_feet ccare_M legcol_red -> ftype_B fr=5 (0.1000), cf=1.000, gamma=7.143, delta=0.086, M=-1.152e+01 
+sim webbed_feet legcol_red -> ftype_B fr=5 (0.1000), cf=1.000, gamma=7.143, delta=0.086, M=-1.152e+01 
+eggs_few back_grey AR_high -> ftype_B fr=5 (0.1000), cf=1.000, gamma=7.143, delta=0.086, M=-1.152e+01 
+diet_fish eggs_few back_grey -> ftype_B fr=5 (0.1000), cf=1.000, gamma=7.143, delta=0.086, M=-1.152e+01 
+webbed_feet eggs_few back_grey -> ftype_B fr=5 (0.1000), cf=1.000, gamma=7.143, delta=0.086, M=-1.152e+01 
+webbed_feet belly_white wload_low -> ftype_B fr=5 (0.1000), cf=1.000, gamma=7.143, delta=0.086, M=-1.152e+01 
+webbed_feet eggs_few wload_low -> ftype_B fr=5 (0.1000), cf=1.000, gamma=7.143, delta=0.086, M=-1.152e+01 
+webbed_feet incub_M wload_low -> ftype_B fr=5 (0.1000), cf=1.000, gamma=7.143, delta=0.086, M=-1.152e+01 
+webbed_feet ccare_M wload_low -> ftype_B fr=5 (0.1000), cf=1.000, gamma=7.143, delta=0.086, M=-1.152e+01 
+sim webbed_feet wload_low -> ftype_B fr=5 (0.1000), cf=1.000, gamma=7.143, delta=0.086, M=-1.152e+01 
+sim bmi_low wload_low leaves_Autumn -> wading_bird fr=14 (0.2800), cf=0.875, gamma=2.083, delta=0.146, M=-1.152e+01 
+incub_F back_brown ftype_C -> diet_invertebrates fr=15 (0.3000), cf=0.714, gamma=1.984, delta=0.149, M=-1.138e+01 
+diet_fish back_grey -> ftype_B fr=6 (0.1200), cf=0.750, gamma=5.357, delta=0.098, M=-1.134e+01 
+back_grey belly_white -> ftype_B fr=6 (0.1200), cf=0.750, gamma=5.357, delta=0.098, M=-1.134e+01 
+wload_low diet_small_rodents -> ftype_A fr=7 (0.1400), cf=0.778, gamma=4.321, delta=0.108, M=-1.134e+01 
+ccare_M diet_small_rodents -> ftype_A fr=7 (0.1400), cf=0.778, gamma=4.321, delta=0.108, M=-1.134e+01 
+webbed_feet incub_M diet_fish -> AR_high fr=8 (0.1600), cf=0.727, gamma=3.636, delta=0.116, M=-1.132e+01 
+webbed_feet ccare_M diet_fish -> AR_high fr=8 (0.1600), cf=0.727, gamma=3.636, delta=0.116, M=-1.132e+01 
+sim webbed_feet diet_fish -> AR_high fr=8 (0.1600), cf=0.727, gamma=3.636, delta=0.116, M=-1.132e+01 
+eggs_many -> diet_plants fr=9 (0.1800), cf=0.818, gamma=3.147, delta=0.123, M=-1.125e+01 
+diet_fish eggs_few -> plunge_dives fr=6 (0.1200), cf=0.600, gamma=5.000, delta=0.096, M=-1.123e+01 
+belly_white ftype_B -> back_grey fr=6 (0.1200), cf=1.000, gamma=5.000, delta=0.096, M=-1.123e+01 
+incub_M ftype_B -> back_grey fr=6 (0.1200), cf=1.000, gamma=5.000, delta=0.096, M=-1.123e+01 
+ccare_M ftype_B -> back_grey fr=6 (0.1200), cf=1.000, gamma=5.000, delta=0.096, M=-1.123e+01 
+bmi_low ftype_A -> diet_small_rodents fr=6 (0.1200), cf=1.000, gamma=5.000, delta=0.096, M=-1.123e+01 
+ccare_F bmi_low legcol_yellow -> diet_small_rodents fr=6 (0.1200), cf=1.000, gamma=5.000, delta=0.096, M=-1.123e+01 
+diet_fish belly_white wload_low -> back_grey fr=6 (0.1200), cf=1.000, gamma=5.000, delta=0.096, M=-1.123e+01 
+sim arrives_Spring -> ccare_M fr=35 (0.7000), cf=0.921, gamma=1.212, delta=0.122, M=-1.106e+01 
+back_grey ftype_B -> plunge_dives fr=5 (0.1000), cf=0.833, gamma=6.944, delta=0.086, M=-1.100e+01 
+belly_white ftype_B -> plunge_dives fr=5 (0.1000), cf=0.833, gamma=6.944, delta=0.086, M=-1.100e+01 
+incub_M ftype_B -> plunge_dives fr=5 (0.1000), cf=0.833, gamma=6.944, delta=0.086, M=-1.100e+01 
+ccare_M ftype_B -> plunge_dives fr=5 (0.1000), cf=0.833, gamma=6.944, delta=0.086, M=-1.100e+01 
+webbed_feet legcol_red -> plunge_dives fr=5 (0.1000), cf=0.833, gamma=6.944, delta=0.086, M=-1.100e+01 
+back_grey AR_high -> plunge_dives fr=5 (0.1000), cf=0.833, gamma=6.944, delta=0.086, M=-1.100e+01 
+webbed_feet back_grey belly_white -> plunge_dives fr=5 (0.1000), cf=0.833, gamma=6.944, delta=0.086, M=-1.100e+01 
+eggs_few back_grey belly_white -> plunge_dives fr=5 (0.1000), cf=0.833, gamma=6.944, delta=0.086, M=-1.100e+01 
+incub_M eggs_few back_grey -> plunge_dives fr=5 (0.1000), cf=0.833, gamma=6.944, delta=0.086, M=-1.100e+01 
+eggs_few back_grey wload_low -> plunge_dives fr=5 (0.1000), cf=0.833, gamma=6.944, delta=0.086, M=-1.100e+01 
+incub_M back_grey wload_low -> plunge_dives fr=5 (0.1000), cf=0.833, gamma=6.944, delta=0.086, M=-1.100e+01 
+incub_M biotope_lakes wload_low -> plunge_dives fr=5 (0.1000), cf=0.833, gamma=6.944, delta=0.086, M=-1.100e+01 
+ccare_M biotope_lakes wload_low -> plunge_dives fr=5 (0.1000), cf=0.833, gamma=6.944, delta=0.086, M=-1.100e+01 
+sim biotope_lakes wload_low -> plunge_dives fr=5 (0.1000), cf=0.833, gamma=6.944, delta=0.086, M=-1.100e+01 
+webbed_feet ccare_M -> AR_high fr=9 (0.1800), cf=0.600, gamma=3.000, delta=0.120, M=-1.096e+01 
+sim webbed_feet -> AR_high fr=9 (0.1800), cf=0.600, gamma=3.000, delta=0.120, M=-1.096e+01 
+bmi_low ftype_C -> diet_invertebrates fr=14 (0.2800), cf=0.737, gamma=2.047, delta=0.143, M=-1.076e+01 
+incub_M AR_high -> diet_fish fr=8 (0.1600), cf=1.000, gamma=3.125, delta=0.109, M=-1.064e+01 
+webbed_feet eggs_few -> diet_fish fr=8 (0.1600), cf=1.000, gamma=3.125, delta=0.109, M=-1.064e+01 
+incub_M belly_white -> eggs_few fr=18 (0.3600), cf=0.900, gamma=1.667, delta=0.144, M=-1.055e+01 
+sim belly_white wload_low -> eggs_few fr=18 (0.3600), cf=0.900, gamma=1.667, delta=0.144, M=-1.055e+01 
+plunge_dives ftype_B -> legcol_red fr=5 (0.1000), cf=1.000, gamma=6.250, delta=0.084, M=-1.054e+01 
+plunge_dives AR_high -> legcol_red fr=5 (0.1000), cf=1.000, gamma=6.250, delta=0.084, M=-1.054e+01 
+plunge_dives back_grey -> legcol_red fr=5 (0.1000), cf=1.000, gamma=6.250, delta=0.084, M=-1.054e+01 
+webbed_feet plunge_dives -> legcol_red fr=5 (0.1000), cf=1.000, gamma=6.250, delta=0.084, M=-1.054e+01 
+plunge_dives belly_white -> legcol_red fr=5 (0.1000), cf=1.000, gamma=6.250, delta=0.084, M=-1.054e+01 
+ftype_B AR_high -> legcol_red fr=5 (0.1000), cf=1.000, gamma=6.250, delta=0.084, M=-1.054e+01 
+webbed_feet ftype_B -> legcol_red fr=5 (0.1000), cf=1.000, gamma=6.250, delta=0.084, M=-1.054e+01 
+eggs_few ftype_B -> legcol_red fr=5 (0.1000), cf=1.000, gamma=6.250, delta=0.084, M=-1.054e+01 
+wload_low AR_high -> legcol_red fr=5 (0.1000), cf=1.000, gamma=6.250, delta=0.084, M=-1.054e+01 
+eggs_few back_grey AR_high -> legcol_red fr=5 (0.1000), cf=1.000, gamma=6.250, delta=0.084, M=-1.054e+01 
+diet_fish eggs_few back_grey -> legcol_red fr=5 (0.1000), cf=1.000, gamma=6.250, delta=0.084, M=-1.054e+01 
+webbed_feet eggs_few back_grey -> legcol_red fr=5 (0.1000), cf=1.000, gamma=6.250, delta=0.084, M=-1.054e+01 
+webbed_feet back_grey wload_low -> legcol_red fr=5 (0.1000), cf=1.000, gamma=6.250, delta=0.084, M=-1.054e+01 
+webbed_feet diet_fish wload_low -> legcol_red fr=5 (0.1000), cf=1.000, gamma=6.250, delta=0.084, M=-1.054e+01 
+webbed_feet belly_white wload_low -> legcol_red fr=5 (0.1000), cf=1.000, gamma=6.250, delta=0.084, M=-1.054e+01 
+webbed_feet eggs_few wload_low -> legcol_red fr=5 (0.1000), cf=1.000, gamma=6.250, delta=0.084, M=-1.054e+01 
+webbed_feet incub_M wload_low -> legcol_red fr=5 (0.1000), cf=1.000, gamma=6.250, delta=0.084, M=-1.054e+01 
+webbed_feet ccare_M wload_low -> legcol_red fr=5 (0.1000), cf=1.000, gamma=6.250, delta=0.084, M=-1.054e+01 
+sim webbed_feet wload_low -> legcol_red fr=5 (0.1000), cf=1.000, gamma=6.250, delta=0.084, M=-1.054e+01 
+incub_M eggs_few back_grey belly_white -> legcol_red fr=5 (0.1000), cf=1.000, gamma=6.250, delta=0.084, M=-1.054e+01 
+incub_M eggs_few back_grey wload_low -> legcol_red fr=5 (0.1000), cf=1.000, gamma=6.250, delta=0.084, M=-1.054e+01 
+diet_fish eggs_few belly_white wload_low -> legcol_red fr=5 (0.1000), cf=1.000, gamma=6.250, delta=0.084, M=-1.054e+01 
+sim bmi_low wload_low -> wading_bird fr=17 (0.3400), cf=0.739, gamma=1.760, delta=0.147, M=-1.049e+01 
+back_brown diet_frogs -> legcol_yellow fr=6 (0.1200), cf=1.000, gamma=4.545, delta=0.094, M=-1.045e+01 
+back_brown diet_small_rodents -> legcol_yellow fr=6 (0.1200), cf=1.000, gamma=4.545, delta=0.094, M=-1.045e+01 
+back_brown ftype_C -> diet_invertebrates fr=15 (0.3000), cf=0.682, gamma=1.894, delta=0.142, M=-1.033e+01 
+sim diet_invertebrates back_brown -> wading_bird fr=10 (0.2000), cf=1.000, gamma=2.381, delta=0.116, M=-1.028e+01 
+bmi_low belly_white ftype_C -> wading_bird fr=10 (0.2000), cf=1.000, gamma=2.381, delta=0.116, M=-1.028e+01 
+incub_M bmi_low back_brown ftype_C -> wading_bird fr=10 (0.2000), cf=1.000, gamma=2.381, delta=0.116, M=-1.028e+01 
+ccare_M bmi_low back_brown ftype_C -> wading_bird fr=10 (0.2000), cf=1.000, gamma=2.381, delta=0.116, M=-1.028e+01 
+ccare_M -> sim fr=36 (0.7200), cf=0.947, gamma=1.184, delta=0.112, M=-1.027e+01 
+webbed_feet diet_fish -> AR_high fr=8 (0.1600), cf=0.667, gamma=3.333, delta=0.112, M=-1.027e+01 
+webbed_feet AR_medium -> wload_medium fr=8 (0.1600), cf=0.800, gamma=3.333, delta=0.112, M=-1.027e+01 
+incub_M back_grey -> ftype_B fr=6 (0.1200), cf=0.667, gamma=4.762, delta=0.095, M=-1.026e+01 
+diet_fish belly_white -> ftype_B fr=6 (0.1200), cf=0.667, gamma=4.762, delta=0.095, M=-1.026e+01 
+ccare_M wload_low diet_frogs -> ftype_A fr=6 (0.1200), cf=0.857, gamma=4.762, delta=0.095, M=-1.026e+01 
+incub_M biotope_lakes ftype_C -> diver fr=6 (0.1200), cf=0.857, gamma=4.762, delta=0.095, M=-1.026e+01 
+ccare_M biotope_lakes ftype_C -> diver fr=6 (0.1200), cf=0.857, gamma=4.762, delta=0.095, M=-1.026e+01 
+sim biotope_lakes ftype_C -> diver fr=6 (0.1200), cf=0.857, gamma=4.762, delta=0.095, M=-1.026e+01 
+webbed_feet ccare_M wsi_short -> diver fr=6 (0.1200), cf=0.857, gamma=4.762, delta=0.095, M=-1.026e+01 
+sim webbed_feet wsi_short -> diver fr=6 (0.1200), cf=0.857, gamma=4.762, delta=0.095, M=-1.026e+01 
+incub_M wading_bird long_billed -> long_legs fr=6 (0.1200), cf=0.857, gamma=4.762, delta=0.095, M=-1.026e+01 
+ccare_M wading_bird long_billed -> long_legs fr=6 (0.1200), cf=0.857, gamma=4.762, delta=0.095, M=-1.026e+01 
+ftype_A -> diet_small_rodents fr=7 (0.1400), cf=0.778, gamma=3.889, delta=0.104, M=-1.018e+01 
+ccare_F legcol_yellow -> diet_small_rodents fr=7 (0.1400), cf=0.778, gamma=3.889, delta=0.104, M=-1.018e+01 
+diet_fish belly_white -> back_grey fr=7 (0.1400), cf=0.778, gamma=3.889, delta=0.104, M=-1.018e+01 
+sim back_brown ftype_C -> wading_bird fr=13 (0.2600), cf=0.867, gamma=2.063, delta=0.134, M=-1.017e+01 
+incub_M biotope_lakes -> diet_fish fr=10 (0.2000), cf=0.833, gamma=2.604, delta=0.123, M=-1.017e+01 
+ccare_M biotope_lakes -> diet_fish fr=10 (0.2000), cf=0.833, gamma=2.604, delta=0.123, M=-1.017e+01 
+sim biotope_lakes -> diet_fish fr=10 (0.2000), cf=0.833, gamma=2.604, delta=0.123, M=-1.017e+01 
+ccare_F back_brown ftype_C wsi_short -> eggs_many fr=8 (0.1600), cf=0.727, gamma=3.306, delta=0.112, M=-1.009e+01 
+webbed_feet wsi_short -> diver fr=8 (0.1600), cf=0.571, gamma=3.175, delta=0.110, M=-1.003e+01 
+bmi_low ftype_C -> wading_bird fr=15 (0.3000), cf=0.789, gamma=1.880, delta=0.140, M=-1.001e+01 
+ccare_F incub_M ftype_C -> legcol_black fr=8 (0.1600), cf=0.471, gamma=2.941, delta=0.106, M=-1.000e+01 
